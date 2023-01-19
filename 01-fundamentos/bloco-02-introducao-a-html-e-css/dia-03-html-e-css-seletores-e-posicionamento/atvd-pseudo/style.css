@@ -1,0 +1,30 @@
+div:hover {
+    border-style: solid;
+    border-color: brown
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic
+  }
+
+div:nth-of-type(1) > h3 {
+    background-color: rgb(225, 65, 65);
+}
+
+div:nth-of-type(2) > h3 {
+    background-color: rgb(225, 214, 65);
+}
+
+div:nth-of-type(3) > h3 {
+    background-color: rgb(78, 225, 65);
+    font-size: 2em;
+    font-family: monospace
+}
+
+div:nth-of-type(4) > h3 {
+    background-color: rgb(65, 121, 225);
+}
+
+div:nth-of-type(5) > h3 {
+    background-color: rgb(188, 65, 225);
+}
