@@ -48,3 +48,4 @@ if (verificarAngulacao === false)   {
     console.log('Erro em algum ângulo')
 }
 
+
