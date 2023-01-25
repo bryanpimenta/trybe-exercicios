@@ -49,12 +49,57 @@ console.log('O maior número do array number é: ' + maiorNumber); */
 //   Caso não tenha nenhum: 'nenhym valor ímpar encontrado';
 //   Obs: n%2 = 0 é par se não é ímpar
 
-for (index = 0; index < numbers.length; index +=1) {
+/* for (index = 0; index < numbers.length; index +=1) {
   if (numbers[index]%2 === 0) {
     console.log('Nenhum valor ímpar encontrado')
   }
   else {
     console.log(numbers[index] + ' é ímpar!')
   }
-}
+} */
 
+//7 Descobrir qual é o menor número do array e imprimir
+
+/* let menorNumber = 1000;
+
+for (let indexMenorN = 0; indexMenorN < numbers.length; indexMenorN += 1){
+    if (menorNumber > numbers[indexMenorN]) {
+        console.log(menorNumber = numbers[indexMenorN]);
+        console.log('O menor número da váriavel numbers é: ' + menorNumber);
+    }
+} */
+
+/* let dora = [];
+for (let index = 1; index <= 50; index +=1) {
+    dora.push(index)
+}
+console.log(dora);
+ */
+
+/* const n = 9;
+
+let resultado = 100;
+for (let index = 0; index <= n; index += 1) {
+  resultado -= index;
+};
+console.log(resultado); */
+
+/* let soma = 0;
+
+for (let index = 1; index < 101; index +=1){
+    soma += index;
+    console.log(soma)
+} */
+
+// Quantas vezes consigo subtrair 5 de 100?
+// Subtrair o 100 ate o 0 usando For
+// Contar quantas vezes ele foi subtraido
+
+let numero = 100; 
+let vezesSub = 0;
+
+for (let index = 5; numero > 0; index = 5) {
+    console.log(numero -= index);
+    vezesSub +=1;
+    console.log(vezesSub);
+} 
