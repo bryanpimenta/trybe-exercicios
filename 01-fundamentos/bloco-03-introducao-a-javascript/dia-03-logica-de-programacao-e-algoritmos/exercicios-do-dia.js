@@ -18,7 +18,7 @@ console.log(fatorial)
 
 //2  Inverter uma String
 
-let fruta = 'mamao'
+let fruta = 'Killjoy'
 let frutaReverse = ''
 
 for (let indexFruit = fruta.length - 1; indexFruit > -1; indexFruit -= 1) {
@@ -34,7 +34,27 @@ let wordReverse = ''
 
 for (let indexWord = word.length -1; indexWord > -1; indexWord -=1) {
     console.log(word[indexWord])
-    wordReverse = word[indexWord]
+    wordReverse += word[indexWord]
 }
 console.log(wordReverse)
 
+//3 Utilizando a estrutura de repetição For
+//Escrever dois algoritmos
+//  Um que imprima a maior palavra dessa lista
+/// A outra a de menor quantidade
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorWord = ''
+
+// Imprimir cada String da lista  (for)(repetição)
+// Contar a quantidade de letras de cada String (.length)(quantidade)
+// Comparar cada quantidade por quantidade (if)(condição)
+
+for (indexLista = 0; indexLista < array.length; indexLista +=1) {
+/*     console.log(array[indexLista])
+    console.log(array[indexLista].length) */
+    if (array[indexLista].length > maiorWord.length) {
+        maiorWord = array[indexLista]
+    }
+}
+console.log(maiorWord);
