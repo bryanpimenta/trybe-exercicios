@@ -1,4 +1,4 @@
-//1 Criar um algoritmo que imprima o 10 fatorial (10!)
+//01 Criar um algoritmo que imprima o 10 fatorial (10!)
 //  10!= 10 x 9 x 8 x...2 x 1 = ?
 //  Fazer com que o 10 seja multiplicado por 9 e o resultado seja colocado em uma variável
 
@@ -16,7 +16,7 @@ console.log(fatorial)
 // O resultado é atualizado o valor de fatorial e repetido o ciclo sobre este valor
 
 
-//2  Inverter uma String
+//02  Inverter uma String
 
 let fruta = 'Killjoy'
 let frutaReverse = ''
@@ -38,13 +38,14 @@ for (let indexWord = word.length -1; indexWord > -1; indexWord -=1) {
 }
 console.log(wordReverse)
 
-//3 Utilizando a estrutura de repetição For
+//03 Utilizando a estrutura de repetição For
 //Escrever dois algoritmos
 //  Um que imprima a maior palavra dessa lista
 /// A outra a de menor quantidade
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let maiorWord = ''
+let menorWord = 'AAAAAAAAAAAAAAAAAA'
 
 // Imprimir cada String da lista  (for)(repetição)
 // Contar a quantidade de letras de cada String (.length)(quantidade)
@@ -56,5 +57,11 @@ for (indexLista = 0; indexLista < array.length; indexLista +=1) {
     if (array[indexLista].length > maiorWord.length) {
         maiorWord = array[indexLista]
     }
+    if (array[indexLista].length < menorWord.length) {
+        menorWord = array[indexLista]
+    }
 }
-console.log(maiorWord);
+
+
+console.log(maiorWord)
+console.log(menorWord)
