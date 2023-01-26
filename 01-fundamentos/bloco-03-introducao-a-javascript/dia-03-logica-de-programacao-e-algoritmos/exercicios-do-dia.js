@@ -61,7 +61,52 @@ for (indexLista = 0; indexLista < array.length; indexLista +=1) {
         menorWord = array[indexLista]
     }
 }
-
-
 console.log(maiorWord)
 console.log(menorWord)
+
+//04 Escrever um algoritmo que imprima o maior número primo entre 2 e 50.
+// Número é primo quando o número é dividido por 1 e por ele mesmo(somente), tendo o resto 0.
+// Exemplo: 12 é divisivel por 1, 2, 3, 6, 12 logo não é um número primo 
+//          17 é divisivel por 1 e 17 somente, sendo um número primo :)
+
+// Fazer um algoritmo que diz se o número é ou não é primo 
+// (for): fazer todas divisões ate o próprio número
+// (if) e (%)
+
+let number2 = 50;
+let primo = 0;
+
+for (let index2 = 1; index2 <= number2; index2 +=1) {
+    console.log(number2%index2);
+    if (number2%index2 === 0) {
+        primo += 1
+    }
+}
+console.log(primo)
+if (primo === 2) {
+    console.log(number2 + ' é primo!')
+}
+else {
+    console.log(number2 + ' não é primo')
+}
+
+// Descobrir os números primos entre 2 e 50 e dizer qual é o maior:
+//   Criar um Array com valores de 2 a 50 (for) (.push)
+let array2 = []
+
+for (let a = 2; a <= 50; a += 1) {
+    array2.push(a)
+}
+console.log(array2);
+
+//  Fazer a divisão de cada valor até ele mesmo
+for (let indexDiv = 1; indexDiv <= array2.length + 1; indexDiv +=1){
+    console.log(indexDiv)
+}
+
+for (let index3 = 1; index3 < 50; index3 +=1)
+    
+
+
+
+
