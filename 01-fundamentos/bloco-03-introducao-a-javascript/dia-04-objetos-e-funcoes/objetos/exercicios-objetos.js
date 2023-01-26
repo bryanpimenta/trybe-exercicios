@@ -4,7 +4,7 @@ let lastName = 'Silva';
 let age = 34;
 let medals = { golden: 2, silver: 3 };
 
-//1 Criar uma variável player e atribuir um objeto contendo as váriaveis acima
+//01 Criar uma variável player e atribuir um objeto contendo as váriaveis acima
 
 let player = {
     nome: 'Marta',
@@ -16,8 +16,16 @@ let player = {
     }
 }
 
-//2 Acessar as chaves name, lastName, age utilizando uma sintaxe
+//02 Acessar as chaves name, lastName, age utilizando uma sintaxe
 //  e imprimir uma mensagem:
 //    “A jogadora Marta Silva tem 34 anos de idade”.
 
 console.log('A jogadora ' + player.nome +' '+ player.lastName + ' tem ' + player.age + ' anos de idade.');
+
+//03 Adicionar uma chave e atribuir os valores
+// chave = bestInTheWorld
+// valor = Datas em que Marta foi a melhor do mundo
+
+player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
+
+console.table(player);
