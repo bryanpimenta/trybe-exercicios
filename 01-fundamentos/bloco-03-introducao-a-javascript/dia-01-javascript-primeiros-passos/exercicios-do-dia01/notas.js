@@ -8,9 +8,9 @@ Porcentagem < 50 -> F
 O código deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
  */ 
 
-let nota = -1
+let nota = 25
 
-if (nota > 100) {
+if (nota > 100 || nota < 0) {
     console.log('Erro!')
 } else if (nota >= 90 ) {
     console.log(nota = 'A')
@@ -22,9 +22,8 @@ if (nota > 100) {
     console.log(nota = 'D')
 } else if (nota >= 50 ) {
     console.log(nota = 'E')
-} else if (nota < 50 && nota > 0 ) {
+} else {
     console.log(nota = 'F')
-} else if (nota > 100 || nota < 0) {
-    console.log('Erro!')
-}
+} 
+
 console.log(nota)
