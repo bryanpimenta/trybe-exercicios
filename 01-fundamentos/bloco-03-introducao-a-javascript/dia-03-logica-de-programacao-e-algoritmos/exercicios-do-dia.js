@@ -45,7 +45,7 @@ console.log(wordReverse)
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let maiorWord = ''
-let menorWord = 'AAAAAAAAAAAAAAAAAA'
+let menorWord = 'java'
 
 // Imprimir cada String da lista  (for)(repetição)
 // Contar a quantidade de letras de cada String (.length)(quantidade)
@@ -73,12 +73,11 @@ console.log(menorWord)
 // (for): fazer todas divisões ate o próprio número
 // (if) e (%)
 
-let number2 = 50;
+/* let number2 = 47;
 let primo = 0;
-
 for (let index2 = 1; index2 <= number2; index2 +=1) {
     console.log(number2%index2);
-    if (number2%index2 === 0) {
+    if (number2 % index2 === 0) {
         primo += 1
     }
 }
@@ -89,24 +88,25 @@ if (primo === 2) {
 else {
     console.log(number2 + ' não é primo')
 }
+ */
+// Tentando Novamente
 
-// Descobrir os números primos entre 2 e 50 e dizer qual é o maior:
-//   Criar um Array com valores de 2 a 50 (for) (.push)
-let array2 = []
+let maiorNum = 0
+let primo = false
 
-for (let a = 2; a <= 50; a += 1) {
-    array2.push(a)
+for (index = 2; index <= 50; index +=1) {
+    primo = true
+    for (div = 2; div < index; div +=1){
+        if (index % div === 0){
+            primo = false
+        }
+    }
+    if (primo){
+        maiorNum = index
+    }
 }
-console.log(array2);
 
-//  Fazer a divisão de cada valor até ele mesmo
-for (let indexDiv = 1; indexDiv <= array2.length + 1; indexDiv +=1){
-    console.log(indexDiv)
-}
-
-for (let index3 = 1; index3 < 50; index3 +=1)
-    
-
+console.log(maiorNum)
 
 
 
