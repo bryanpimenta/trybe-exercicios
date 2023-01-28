@@ -33,7 +33,7 @@ console.log(array)
 
 //Agora, crie um novo array a partir do array numbers, sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte.
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let mult = []
 
 for (indexOne = 1; indexOne < numbers.length; indexOne +=1) {
@@ -41,7 +41,7 @@ for (indexOne = 1; indexOne < numbers.length; indexOne +=1) {
     mult.push(numbers[indexSec] * numbers[indexOne])
 }
 
-console.log(mult)
+console.log(mult) */
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let newArray = [];
