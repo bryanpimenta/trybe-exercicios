@@ -69,13 +69,14 @@ for (let indexMenorN = 0; indexMenorN < numbers.length; indexMenorN += 1){
     }
 }
 
+// Exercicio durante a Aula ao vivo
 let dora = [];
 for (let index = 1; index <= 50; index +=1) {
     dora.push(index)
 }
 console.log(dora);
 
-
+// Exercicio do fixando
 const n = 9;
 
 let resultado = 100;
@@ -84,6 +85,7 @@ for (let index = 0; index <= n; index += 1) {
 };
 console.log(resultado);
 
+// Exercicio do fixando
 let soma = 0;
 
 for (let index = 1; index < 101; index +=1){
@@ -95,7 +97,7 @@ for (let index = 1; index < 101; index +=1){
 // Subtrair o 100 ate o 0 usando For
 // Contar quantas vezes ele foi subtraido
 
-/* let numero = 100; 
+let numero = 100; 
 let vezesSub = 0;
 
 for (let index = 5; numero > 0; index = 5) {
@@ -103,5 +105,5 @@ for (let index = 5; numero > 0; index = 5) {
     vezesSub +=1;
     console.log(vezesSub);
 } 
- */
+
 
