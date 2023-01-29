@@ -10,3 +10,22 @@ let diasDaSemana = {
 
 /* diasDaSemana.1; */ // SyntaxError: Unexpected number
 console.log(diasDaSemana['1']); // domingo
+
+
+function calculaAreaPerimetro(base, altura){
+
+let resultado = {
+  area: 0,
+  perimetro: 0
+}
+
+}
+
+let resultado = {
+  area: 0,
+  perimetro: 0
+}
+
+console.log(resultado.area = 2)
+
+

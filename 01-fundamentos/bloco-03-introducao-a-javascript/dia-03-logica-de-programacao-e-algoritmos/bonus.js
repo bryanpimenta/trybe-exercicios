@@ -26,7 +26,7 @@ let space = ' '
 
 for(let indexTico = 0; indexTico < n; indexTico +=1){
     for (let indexSpace = n - 1; indexSpace >= 0; indexSpace -=1){
-        aste += space
+        (aste += space)
     }
     aste += tico
     console.log(aste)
