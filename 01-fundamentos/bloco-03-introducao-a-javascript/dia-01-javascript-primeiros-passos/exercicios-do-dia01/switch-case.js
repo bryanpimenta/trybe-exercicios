@@ -1,4 +1,4 @@
-let peça = 'CavAalo'
+let peça = 'Bispo'
 
 switch (peça.toLowerCase()) {
     case 'peao':

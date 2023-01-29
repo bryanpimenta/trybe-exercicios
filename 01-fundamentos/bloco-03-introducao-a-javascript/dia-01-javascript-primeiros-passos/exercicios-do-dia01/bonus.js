@@ -63,3 +63,34 @@ De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir 
 De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto. */
 
+let payment = 5450
+let paymentINSS = 0
+let paymentIR = 0
+let paymentTotal = 0
+
+// Desconto INSS
+if (payment <= 1556.94) {
+   paymentINSS = payment * 0.92
+} 
+else if (payment >= 1556.95 && payment <= 2594.92) {
+    paymentINSS = payment * 0.91
+} 
+else if (payment >= 2594.93 && payment <= 5189.82) {
+    paymentINSS = payment * 0.89
+} else {
+    paymentINSS = payment - 570.88
+}
+// Desconto do IR
+if (paymentINSS <= 1903.98) {
+    paymentTotal = paymentINSS
+} else if (paymentINSS >= 1903.99 && paymentINSS <= 2826.65) {
+    paymentIR = (paymentINSS * 0.075) - 142.80
+} else if (paymentINSS >= 2826.66 && paymentINSS <= 3751.05) {
+    paymentIR = (paymentINSS * 0.15) - 354.80
+} else if (paymentINSS >= 3751.06 && paymentINSS <= 4664.68) {
+    paymentIR = (paymentINSS * 0.225) - 636.13
+} else if (paymentINSS > 4664.68) {
+    paymentIR = (paymentINSS * 0.275) - 869.36
+}
+paymentTotal = paymentINSS - paymentIR;
+console.log(`Salário Total: ${paymentTotal}`)
