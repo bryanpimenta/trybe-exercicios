@@ -1,6 +1,5 @@
 //Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
 
-
 function addition (a, b){
     return a + b
 }
@@ -64,7 +63,7 @@ function positNegat(number4) {
 console.log(positNegat(0))
 
 //Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo.
-// Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. 
+//Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. 
 //Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro.
 //Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 //Um ângulo será considerado inválido se não tiver um valor positivo.
@@ -81,3 +80,14 @@ function triangle(a,b,c){
 }
 
 console.log(triangle(30,90,60))
+
+
+
+
+let a = "Serei a melhor pessoa dev";
+let b = "Esse é meu jeito dev de ser!";
+let num = 2;
+let strings = [a, b];
+
+
+console.log((typeof strings) == 'array');
