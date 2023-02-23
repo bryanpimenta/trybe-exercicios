@@ -29,7 +29,6 @@ function bigNumber (number1, number2) {
 
 console.log(bigNumber(1,2))
 
-
 //Faça um programa que retorne o maior de três números. Defina, no começo do programa,
 // três constantes com os valores que serão comparados
 
@@ -48,7 +47,6 @@ console.log(bigNumber(1,2,10))
 //Faça um programa que, dado um valor recebido como parâmetro,
 // retorne “positive” se esse valor for positivo, “negative” se for negativo,
 // e caso não seja nem positivo e nem negativo retorne “zero”.
-
 
 function positNegat(number4) {
     if (number4 > 0) {
@@ -81,13 +79,7 @@ function triangle(a,b,c){
 
 console.log(triangle(30,90,60))
 
-
-
-
 let a = "Serei a melhor pessoa dev";
 let b = "Esse é meu jeito dev de ser!";
 let num = 2;
 let strings = [a, b];
-
-
-console.log((typeof strings) == 'array');
