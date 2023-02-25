@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    font-family: georgia, "times new roman", times, serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
