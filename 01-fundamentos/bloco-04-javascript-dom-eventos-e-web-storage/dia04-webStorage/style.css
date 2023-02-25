@@ -1,24 +1,23 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+    color: rgb(0, 255, 0);
+    background-color: rgb(153, 0, 255);
 }
-
-body {
-    border: red solid 1px;
+header {
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    justify-content: center;
 }
 
 #summary {
-    border: red solid 1px;
     display: flex;
-    width: 700px;
-    height: 300px;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-p {
-    border: red solid 1px;
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+
