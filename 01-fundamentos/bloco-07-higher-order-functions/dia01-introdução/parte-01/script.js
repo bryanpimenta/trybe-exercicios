@@ -1,7 +1,7 @@
-let local = 'praia';
+let local = 'praiaa';
 
 let estadoEmocional;
 
-(local === 'praia' || local === 'cinema') ? estadoEmocional = true : estadoEmocional = false; 
+(local === 'praiaa' || local === 'cinema') ? estadoEmocional = true : estadoEmocional = false; 
 
 console.log(estadoEmocional);
