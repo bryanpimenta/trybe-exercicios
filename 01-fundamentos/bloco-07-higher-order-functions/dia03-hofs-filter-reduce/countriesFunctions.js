@@ -26,10 +26,11 @@ console.log(getTotalArea());
     population: 55197,
     area: 199
   } */
+  
 const longestName = () => {
   const longNameCountrie = countries
     .reduce((acc, curr) => (acc.name.length > curr.name.length) ? acc : curr);
 return longNameCountrie;
 }
 
-  console.log(longestName());
+console.log(longestName());
