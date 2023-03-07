@@ -8,5 +8,3 @@ const rectangles = [rectangle1, rectangle2, rectangle3];
 rectangles.forEach((rectangle) => {
   console.log(rectangleArea(rectangle[0],rectangle[1])); // Altere o parâmetro recebido por rectangleArea()
 });
-
-
