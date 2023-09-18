@@ -6,21 +6,58 @@
 // Para isso adicione dois métodos: um que calcula a soma das notas da pessoa estudante e outro que calcula a média das notas da pessoa estudante.
 
 class Student {
-    public registration: number = 0;
-    public name: string = "";
-    public testNotes: number[] = [];
-    public workNotes: number[] = [];
+    private _registration: number;
+    private _name: string;
+    private _testNotes: number[];
+    private _workNotes: number[];
 
-    public sumNotes(): number {
+    constructor(registration: number, name: string, testNotes: number[], workNotes: number[]) {
+        this._registration = registration;
+        this._name = name;
+        this._testNotes = testNotes;
+        this._workNotes = workNotes;
+    }
+
+    getRegistration(): number {
+        return this._registration;
+    }
+
+    setRegistration(value: number) {
+        if (value < 0) throw new Error('A matrícula não pode ser um valor negativo.');
+        this._registration = value;
+    }
+
+    getName(): string {
+        return this._name;
+    }
+
+    setName(value: string) {
+        if (value.length < 3) throw new Error('O nome deve conter no mínimo 3 caracteres.');
+        this._name = value;
+    }
+
+    sumTestNotes(): number {
         let soma = 0;
-        for (let nota of this.testNotes) {
+        for (let nota of this._testNotes) {
             soma += nota;
         }
         return soma;
     }
 
-    public avgNotes(): number {
-        return this.avgNotes() / this.testNotes.length;
+    avgTestNotes(): number {
+        return this.avgTestNotes() / this._testNotes.length;
+    }
+
+    sumWorkNotes(): number {
+        let soma = 0;
+        for (let nota of this._workNotes) {
+            soma += nota;
+        }
+        return soma;
+    }
+
+    avgWorkNotes(): number {
+        return this.sumWorkNotes() / this._workNotes.length;
     }
 };
 
@@ -35,10 +72,11 @@ class Student {
 // A classe que representa o pedido deverá ter dois métodos: um que calcula o total do pedido e outro que calcula o total aplicando o valor de desconto.
 
 class Client {
-    private _name: string();
+    // _ underLine significa dizer que a chave é privada
+    private _name: string;
 
     constructor(name: string) {
-        this.name = name;
+        this._name = name;
     }
 
     getName(): string {
@@ -46,11 +84,8 @@ class Client {
     }
 
     setName(value: string) {
-        if (value.length < 3) {
-            throw new Error('O nome deve conter no mínimo 3 caracteres.');
-        }
-      
-            this._name = value;
+        if (value.length < 3) throw new Error('O nome deve conter no mínimo 3 caracteres.');
+        this._name = value;
     }
 };
 
@@ -67,17 +102,41 @@ class Order {
         this._discount = discount;
     }
 
-    public totalOrder(): number {
-        let total = 0;
-        for (let item of this.itens) {
-            total += item.price;
-        }
-        return total;
+    getClient(): Client {
+        return this._client;
+    }
+    
+    setClient(value: Client) {
+        this._client = value;
     }
 
-    public totalOrderWithDiscount(): number {
-        return this.totalOrder() - (this.totalOrder() * this.discount);
+    getItems(): OrderItem[] {
+        return this._items;
     }
+    
+    setItems(value: OrderItem[]) {
+        if (value.length === 0) throw new Error('O pedido deve ter pelo meno um item.');
+        this._items = value;
+    }
+
+    getFormPayment(): string {
+        return this._formPayment;
+    }
+    
+    setFormPayment(value: string) {
+        this._formPayment = value;
+    }
+
+
+    getDiscount(): number {
+        return this._discount;
+    }
+    
+    setDiscount(value: number) {
+        if (value < 0) throw new Error('O desconto não pode ser um valor negativo.');
+        this._discount = value;
+    }
+    
 };
 
 class OrderItem {
@@ -107,3 +166,25 @@ class OrderItem {
         this._price = value;
     }
 };
+
+
+// Testando
+const client = new Client('João');
+const sandwich = new OrderItem('Sanduíche Natural', 5.00);
+const juice = new OrderItem('Suco de Abacaxi', 5.00);
+const dessert = new OrderItem('Gelatina de Uva', 2.50);
+const order = new Order(client, [sandwich, juice, dessert], 'dinheiro', 0.10);
+
+console.log(order);
+
+// output: 
+/* Order {
+    _items: [
+      OrderItem { _name: 'Sanduíche Natural', _price: 5 },
+      OrderItem { _name: 'Suco de Abacaxi', _price: 5 },
+      OrderItem { _name: 'Gelatina de Uva', _price: 2.5 }
+    ],
+    _discount: 0.1,
+    _client: Client { _name: 'João' },
+    _formPayment: 'dinheiro'
+} */
