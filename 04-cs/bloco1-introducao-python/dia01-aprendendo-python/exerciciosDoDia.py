@@ -92,6 +92,10 @@ print(paintBudget(55))
 print(paintBudget(56))
 
 
+# Exercício 6: Crie uma função que receba os três lado de um triângulo
+# e informe qual o tipo de triângulo formado ou "não é triangulo",
+# caso não seja possível formar um triângulo.
+
 def sideTriangleType(s1: int, s2: int, s3: int) -> str:
     if type(s1) is not int or type(s2) is not int or type(s3) is not int:
         return "Não é um triângulo"
