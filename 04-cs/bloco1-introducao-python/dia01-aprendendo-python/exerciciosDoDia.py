@@ -2,7 +2,7 @@
 #  Crie uma função que receba dois números e retorne o maior deles.
 
 
-def higherNumber(num1: int, num2: int) -> int:
+def higher_number(num1: int, num2: int) -> int:
     if num1 > num2:
         return num1
     elif num2 == num1:
@@ -11,24 +11,24 @@ def higherNumber(num1: int, num2: int) -> int:
         return num2
 
 
-print(higherNumber(10, 20))
-print(higherNumber(20, 10))
-print(higherNumber(10, 10))
+print(higher_number(10, 20))
+print(higher_number(20, 10))
+print(higher_number(10, 10))
 
 # Exercício 2:
 # Calcule a média aritmética dos valores contidos em uma lista.
 
 
-def arithmeticAVG(list: int) -> int:
+def arithmetic_avg(list: list[int]) -> int:
     sum = 0
     for num in list:
         sum += num
     return sum / len(list)
 
 
-print(arithmeticAVG([1, 2, 3, 4, 5]))
-print(arithmeticAVG([10, 20, 30, 40, 50]))
-print(arithmeticAVG([10, 10, 10, 10, 10]))
+print(arithmetic_avg([1, 2, 3, 4, 5]))
+print(arithmetic_avg([10, 20, 30, 40, 50]))
+print(arithmetic_avg([10, 10, 10, 10, 10]))
 
 # Exercício 3:
 # Faça um programa que, dado um valor n qualquer,
@@ -44,25 +44,25 @@ print(arithmeticAVG([10, 10, 10, 10, 10]))
 """
 
 
-def squareDrawing(n: int) -> any:
+def square_drawing(n: int) -> any:
     for i in range(n):
         print(n * "*")
 
 
-print(squareDrawing(5))
-print(squareDrawing(7))
+print(square_drawing(5))
+print(square_drawing(7))
 
 
-def biggestName(list: list) -> str:
-    bigName = ""
+def biggest_name(list: list[str]) -> str:
+    big_name = ""
     for name in list:
-        if len(name) > len(bigName):
-            bigName = name
-    return bigName
+        if len(name) > len(big_name):
+            big_name = name
+    return big_name
 
 
 nomes = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
-print(biggestName(nomes))
+print(biggest_name(nomes))
 
 
 # Exercício 5: Considere que a cobertura da tinta é de 1 litro para cada 3
@@ -76,9 +76,9 @@ print(biggestName(nomes))
 # 1 Lata possui 18 litros || Custa R$ 80,00 || Cobre 54 metros quadrados
 
 
-def paintBudget(wallArea: int) -> str:
+def paint_budget(wall_area: int) -> str:
     price = 80
-    liters = wallArea / 3
+    liters = wall_area / 3
     cans = liters // 18
 
     if liters % 18:
@@ -86,16 +86,16 @@ def paintBudget(wallArea: int) -> str:
     print(cans, cans * price)
 
 
-paintBudget(54)
-paintBudget(55)
-paintBudget(56)
+paint_budget(54)
+paint_budget(55)
+paint_budget(56)
 
 
 # Exercício 6: Crie uma função que receba os três lado de um triângulo
 # e informe qual o tipo de triângulo formado ou "não é triangulo",
 # caso não seja possível formar um triângulo.
 
-def sideTriangleType(s1: int, s2: int, s3: int) -> str:
+def side_triangle_type(s1: int, s2: int, s3: int) -> str:
     if type(s1) is not int or type(s2) is not int or type(s3) is not int:
         return "Não é um triângulo"
 
@@ -107,10 +107,10 @@ def sideTriangleType(s1: int, s2: int, s3: int) -> str:
         print("Triângulo Escaleno: três lados diferentes")
 
 
-sideTriangleType(1, 2, 3)
-sideTriangleType(3, 3, 3)
-sideTriangleType(2, 3, 2)
-sideTriangleType(2, 3, 'a')
+side_triangle_type(1, 2, 3)
+side_triangle_type(3, 3, 3)
+side_triangle_type(2, 3, 2)
+side_triangle_type(2, 3, 'a')
 
 # EXERCICIOS BONUS
 
@@ -120,11 +120,11 @@ sideTriangleType(2, 3, 'a')
 numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
 
 
-def minNumberOfList(list: list) -> int:
+def min_number_of_list(list: list[int]) -> int:
     print(min(list))
 
 
-minNumberOfList(numbers)
+min_number_of_list(numbers)
 
 
 # Exercício 8:
@@ -133,15 +133,15 @@ minNumberOfList(numbers)
 # Por exemplo, para n = 5 o triângulo terá 5 asteriscos na base:
 
 
-def drawTriangle(n: int) -> str:
+def draw_triangle(n: int) -> str:
     asterisk = "*"
     for i in range(n):
         print(asterisk)
         asterisk += "*"
 
 
-drawTriangle(5)
-drawTriangle(7)
+draw_triangle(5)
+draw_triangle(7)
 
 # Exercício 9:
 # Crie uma função que receba um número inteiro N e retorne o somatório
@@ -149,7 +149,7 @@ drawTriangle(7)
 # o valor esperado será 15.
 
 
-def sumRange(N: int) -> int:
+def sum_range(N: int) -> int:
     sum = 0
     for i in range(N + 1):
         sum += i
@@ -159,8 +159,8 @@ def sumRange(N: int) -> int:
 
 # range cria lista a partir do 0: [0, 1, 2, ..., N]
 # somei + 1 para criar lista a partir do 1: [1, 2, ..., N]
-sumRange(5)
-sumRange(10)
+sum_range(5)
+sum_range(10)
 
 
 # Exercício 4:
@@ -185,7 +185,7 @@ sumRange(10)
 # A -> 2.5 Litro | G -> 1.9 Litro
 
 
-def gasolineSupply(type: str, liters: int) -> str:
+def gasoline_supply(type: str, liters: int) -> str:
     discount = 0
     partial_price = 0
 
@@ -204,6 +204,6 @@ def gasolineSupply(type: str, liters: int) -> str:
     print(f"R$ {round(total_price, 2)}")
 
 
-gasolineSupply("G", 20)
-gasolineSupply("G", 21)
-gasolineSupply("A", 20)
+gasoline_supply("G", 20)
+gasoline_supply("G", 21)
+gasoline_supply("A", 20)
