@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-eletiva-c#", "05-eletiva-c#", "{0445A85F-1A55-442D-B7D4-EB45CCE35F6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bloco01-fundamentos-de-c#", "bloco01-fundamentos-de-c#", "{A74AB47D-9ECE-4D6D-8967-67D0E73515F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dia01-hello-world-em-c#", "dia01-hello-world-em-c#", "{CB9BBA74-413A-43B1-BD9B-2C6CE84A7AE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "05-eletiva-c#\bloco01-fundamentos-de-c#\dia01-hello-world-em-c#\HelloWorld\HelloWorld.csproj", "{7E2F22CB-3537-496A-AC74-A3826D228DC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2F22CB-3537-496A-AC74-A3826D228DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2F22CB-3537-496A-AC74-A3826D228DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2F22CB-3537-496A-AC74-A3826D228DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2F22CB-3537-496A-AC74-A3826D228DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A74AB47D-9ECE-4D6D-8967-67D0E73515F1} = {0445A85F-1A55-442D-B7D4-EB45CCE35F6D}
+		{CB9BBA74-413A-43B1-BD9B-2C6CE84A7AE4} = {A74AB47D-9ECE-4D6D-8967-67D0E73515F1}
+		{7E2F22CB-3537-496A-AC74-A3826D228DC6} = {CB9BBA74-413A-43B1-BD9B-2C6CE84A7AE4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65440FC5-C9B5-4FDA-ABE8-9CBED82D812A}
+	EndGlobalSection
+EndGlobal

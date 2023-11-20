@@ -3,12 +3,10 @@ PI = 3.14  # PI é uma "constante" em nosso módulo
 
 
 def square(side):
-    '''Calculate area of square.'''
     return side * side
 
 
 def rectangle(length, width):
-    '''Calculate area of rectangle.'''
     return length * width
 
 
